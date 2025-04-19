@@ -1,0 +1,12 @@
+{
+  "name": "hydrogen-water-landing",
+  "version": "1.0.0",
+  "description": "A responsive landing page for Hydrogen Water",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+} 
