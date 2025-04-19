@@ -327,65 +327,65 @@ footer {
 }
 
 /* Override default styles */
-convai-widget {
-    --widget-primary-color: var(--primary-color);
-    --widget-background-color: var(--white);
-    --widget-text-color: var(--text-color);
-    --widget-border-radius: 12px;
-    --widget-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+elevenlabs-convai {
+    --convai-primary-color: var(--primary-color);
+    --convai-background-color: var(--white);
+    --convai-text-color: var(--text-color);
+    --convai-border-radius: 12px;
+    --convai-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hide branding */
-convai-widget::part(branding) {
+elevenlabs-convai::part(branding) {
     display: none;
 }
 
 /* Customize the chat button */
-convai-widget::part(chat-button) {
+elevenlabs-convai::part(chat-button) {
     background-color: var(--primary-color);
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Customize the chat window */
-convai-widget::part(chat-window) {
-    border-radius: var(--widget-border-radius);
-    box-shadow: var(--widget-box-shadow);
+elevenlabs-convai::part(chat-window) {
+    border-radius: var(--convai-border-radius);
+    box-shadow: var(--convai-box-shadow);
 }
 
 /* Customize the chat header */
-convai-widget::part(chat-header) {
+elevenlabs-convai::part(chat-header) {
     background-color: var(--primary-color);
     color: var(--white);
-    border-radius: var(--widget-border-radius) var(--widget-border-radius) 0 0;
+    border-radius: var(--convai-border-radius) var(--convai-border-radius) 0 0;
 }
 
 /* Customize message bubbles */
-convai-widget::part(message-bubble) {
+elevenlabs-convai::part(message-bubble) {
     border-radius: 12px;
     margin: 8px 0;
 }
 
 /* Customize user messages */
-convai-widget::part(user-message) {
+elevenlabs-convai::part(user-message) {
     background-color: var(--primary-color);
     color: var(--white);
 }
 
 /* Customize assistant messages */
-convai-widget::part(assistant-message) {
+elevenlabs-convai::part(assistant-message) {
     background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
 /* Customize input area */
-convai-widget::part(input-area) {
+elevenlabs-convai::part(input-area) {
     border-top: 1px solid var(--light-gray);
     padding: 12px;
 }
 
 /* Customize send button */
-convai-widget::part(send-button) {
+elevenlabs-convai::part(send-button) {
     background-color: var(--primary-color);
     color: var(--white);
     border-radius: 50%;
