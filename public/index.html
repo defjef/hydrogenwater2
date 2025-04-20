@@ -6,6 +6,9 @@
     <title>Hydrogen Water - Discover the Power</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/download.js" defer></script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -164,8 +167,24 @@
 
     <!-- AI Assistant -->
     <div class="ai-assistant-container">
-        <elevenlabs-convai agent-id="2zmSDMINq8XUV5WMcmzX"></elevenlabs-convai>
+        <elevenlabs-convai agent-id="iR0yKJiBxAlFg0SlvQmZ"></elevenlabs-convai>
     </div>
+
+    <!-- Download button container -->
+    <div class="conversation-container">
+        <div class="conversation-download">
+            <button class="download-btn">Download</button>
+            <div class="download-options">
+                <div class="download-option download-pdf">PDF</div>
+                <div class="download-option download-txt">TXT</div>
+            </div>
+        </div>
+        <div class="conversation-content">
+            <!-- Conversation content will be dynamically added here -->
+        </div>
+    </div>
+
     <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+    <script src="conversation.js"></script>
 </body>
 </html> 
