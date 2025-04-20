@@ -1,15 +1,15 @@
 {
-  "name": "hydrogen-water-landing",
-  "version": "1.0.0",
-  "description": "A responsive landing page for Hydrogen Water",
+  "name": "hydrogen-water",
+  "version": "1.0.1",
+  "description": "Hydrogen Water Landing Page",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "body-parser": "^1.20.2",
-    "mongoose": "^8.0.0",
-    "dotenv": "^16.3.1"
+    "mongoose": "^8.13.2",
+    "dotenv": "^16.5.0",
+    "body-parser": "^1.20.2"
   }
 } 
