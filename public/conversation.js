@@ -3,6 +3,7 @@ let conversationMessages = [];
 
 // Function to display webhook data
 function displayWebhookData(data) {
+    console.log('Displaying webhook data:', data);
     const conversationContent = document.querySelector('.conversation-content');
     const messageElement = document.createElement('div');
     messageElement.className = 'message webhook-data';
@@ -17,6 +18,16 @@ function displayWebhookData(data) {
     `;
     conversationContent.appendChild(messageElement);
     conversationContent.scrollTop = conversationContent.scrollHeight;
+}
+
+// Test function to display sample webhook data
+function testWebhookDisplay() {
+    const testData = {
+        test: true,
+        timestamp: new Date().toISOString(),
+        message: 'This is a test webhook message'
+    };
+    displayWebhookData(testData);
 }
 
 // Event Listeners
@@ -75,4 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize conversation container
     const conversationContent = document.querySelector('.conversation-content');
     conversationContent.innerHTML = '<div class="conversation-start">Webhook data will appear here when received</div>';
+    
+    // Add test button
+    const testButton = document.createElement('button');
+    testButton.textContent = 'Test Webhook Display';
+    testButton.style.marginTop = '10px';
+    testButton.addEventListener('click', testWebhookDisplay);
+    conversationContent.appendChild(testButton);
 }); 

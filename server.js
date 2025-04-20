@@ -41,7 +41,10 @@ app.get('/', (req, res) => {
 // Webhook endpoint for ElevenLabs
 app.post('/webhook-test/travel', (req, res) => {
   try {
-    console.log('Received webhook data:', req.body);
+    console.log('=== Webhook Received ===');
+    console.log('Headers:', req.headers);
+    console.log('Body:', JSON.stringify(req.body, null, 2));
+    console.log('=====================');
     
     // Send success response
     res.status(200).json({ 
@@ -88,6 +91,14 @@ app.get('/api/conversations/latest', async (req, res) => {
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).send('OK');
+});
+
+// Test endpoint
+app.get('/test', (req, res) => {
+  res.json({
+    message: 'Server is working',
+    timestamp: new Date().toISOString()
+  });
 });
 
 app.listen(PORT, '0.0.0.0', () => {
